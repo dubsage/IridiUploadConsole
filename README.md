@@ -110,142 +110,281 @@ Iridi projects
 
 
 arguments:
+
 args[0] "get_server_projects"
+
 args[1] IP 
+
 args[2] pass
 
+
+
 response:
+
 Iridi projects
+
 [Count]
+
 [Object name]
+
 [Project name]
+
 [Object name]
+
 [Project name]
+
 ...
 
 
+
+
+
 arguments:
+
 args[0] "upload"
+
 args[1] login 
+
 args[2] pass
+
 args[3] folder
+
 args[4] object 
+
 args[5] project
+
 args[6] file_path
 
+
+
 response:
+
 result_code
 
 
+
+
+
 arguments:
+
 args[0] "upload_and_download"
+
 args[1] iridi_login 
+
 args[2] iridi_pass
+
 args[3] iridi_folder
+
 args[4] iridi_object 
+
 args[5] project
+
 args[6] file_path
+
 args[7] server_IP
+
 args[8] server_pass 
+
 args[9] server_object
+
 args[10] server_project
 
+
+
 response:
+
 result_code
 
 
+
+
+
 arguments:
+
 args[0] "upload_many"
+
 args[1] {count of uploads} 
+
 args[2] login 
+
 args[3] pass
+
 args[4] folder
+
 args[5] object 
+
 args[6] project
+
 args[7] file_path
+
 args[8] login 
+
 args[9] pass
+
 args[10] folder
+
 args[11] object 
+
 args[12] project
+
 args[13] file_path
+
 ...
 
+
+
 response:
+
 result_code
+
+
+
 
 
 arguments:
+
 args[0] "upload_and_download_many"
+
 args[1] {count of uploads}
+
 args[2] {if download at server: 1; else 0;}
+
 args[3] iridi_login 
+
 args[4] iridi_pass
+
 args[5] iridi_folder
+
 args[6] iridi_object 
+
 args[7] iridi_project
+
 args[8] file_path
+
 args[9] {server_IP}
+
 args[10] {server_pass}
+
 args[11] {server_object}
+
 args[12] {server_project}
 
+
+
 response:
+
 result_code
+
+
 
 example: upload_and_download_many 2 0 "iridi_login" "iridi_pass" "iridi_folder" "iridi_object" "iridi_project" file_path 1 "iridi_login" "iridi_pass" "iridi_folder" "iridi_object" "iridi_project" file_path "10.16.1.19" "server_pass" "server_object" "server_project"
 
 
+
+
+
 #result_codes:
+
 //Operation completed successfully
+
 Successfully = 1
 
+
+
 //Unable to access resource iridi.com
+
 IridiUnabledAccess = 10
 
+
+
 //Authentication to iridi.com failed
+
 IridiUnabledAuthentication = 11
 
+
+
 //Can't find project on iridi.com
+
 IridiCantFindProject = 12
 
+
+
 //Data is not filled for iridi.com
+
 IridiDataIsNotFilled = 13
 
+
+
 //Upload file failed at iridi.com
+
 IridiUploadFileFailed = 14
 
+
+
 //Wrong line project at iridi.com
+
 IridiWrongLineProject = 15
 
+
+
 //Unknown error on iridi.com
+
 IridiUnknownError = 19
 
 
+
+
+
 //Cannot access on server
+
 ServerUnabledAccess = 20
 
+
+
 //Authentication to server failed
+
 ServerUnabledAuthentication = 21
 
+
+
 //Can't find project on server
+
 ServerCantFindProject = 22
 
+
+
 //Data is not filled for server
+
 ServerDataIsNotFilled = 23
 
+
+
 //Download file at server failed 
+
 ServerDownloadFileFailed = 24
 
+
+
 //Wrong line project at server
+
 ServerWrongLineProject = 25
 
+
+
 //Unknown error on server
+
 ServerUnknownError = 29
 
 
+
+
+
 //Invalid file path
+
 InvalidFilePath = 30
 
+
+
 //Wrong args
+
 WrongConsoleArgs = 40
