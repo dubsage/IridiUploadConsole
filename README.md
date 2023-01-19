@@ -15,7 +15,7 @@ Platform:
 dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\
 
 #Console commands.
-U can use console commands. Show all: --help
+You can use console commands. To show all use --help command.
 
 #Example. 
 
@@ -60,14 +60,14 @@ args[1] login
 args[2] pass
 
 response:
-Iridi projects\r\n
-[Count]\r\n
-[Folder name]\r\n
-[Object name]\r\n
-[Project name]\r\n
-[Folder name]\r\n
-[Object name]\r\n
-[Project name]\r\n
+Iridi projects
+[Count]
+[Folder name]
+[Object name]
+[Project name]
+[Folder name]
+[Object name]
+[Project name]
 ...
 
 
@@ -77,12 +77,12 @@ args[1] IP
 args[2] pass
 
 response:
-Iridi projects\r\n
-[Count]\r\n
-[Object name]\r\n
-[Project name]\r\n
-[Object name]\r\n
-[Project name]\r\n
+Iridi projects
+[Count]
+[Object name]
+[Project name]
+[Object name]
+[Project name]
 ...
 
 
