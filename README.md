@@ -3,7 +3,8 @@
 This program allows you to update existing Iridi projects on the Iridi cloud. Then update the project on the server, like a UMC C3.
 
 
-#build
+
+**#build**
 Entry point:
 Program.cs static int Main(string[] args)
 
@@ -16,66 +17,67 @@ Platform:
 dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\
 
 
-#Console commands.
-You can use console commands. To show all use --help command.
 
-#Example. 
+**#Console commands.**
+You can use console commands. To show all, use --help command.
+
+**#Example.**
 
 
 Add new transfer:
 
-IU >add
+>IU >add
 
 
 Enter login and pass at iridi:
 
-IU >ilogin iridi_login
-
-IU >ipass iridi_pass
+>IU >ilogin iridi_login
+>
+>IU >ipass iridi_pass
 
 
 Show projects at iridi.com:
 
-IU >iprojects
+>IU >iprojects
 
 
 Select smt iridi project:
 
-IU >iset 8
+>IU >iset 8
 
 
 Set file path:
 
-IU >filepath D:\projects\Iridi\Test.sirpz
+>IU >filepath D:\projects\Iridi\Test.sirpz
 
 
 Upload file:
 
-IU >iupload
+>IU >iupload
 
 
 Enter IP and pass at server:
 
-IU >sip 192.168.1.19
-
-IU >spass server_pass
+>IU >sip 192.168.1.19
+>
+>IU >spass server_pass
 
 
 Show projects at server:
 
-IU >sprojects
+>IU >sprojects
 
 
 Select smt server project:
-IU >sset 1
+>IU >sset 1
 
 
 Download project at server:
-IU >sdownload
+>IU >sdownload
 
 
 
-#Arguments
+**#Arguments**
 You can use console arguments.
 
 
